@@ -1,0 +1,336 @@
+= MCP VS Code Integration
+:toc: right
+:toclevels: 5
+:sectnums: 5
+:sectnumlevels: 5
+
+---
+
+NOTE: When you run in dev mode, you get inspector
+
+---
+
+== Integration with VS Code
+
+
+#Weather | Crypto | Github#
+
+---
+
+* [x] Visual Studio Code
+* [x] Continue Extension
+* [ ] #Continue CLI#
+** Think of it like this:
+*** Your FastMCP server = Tool provider (exposes get_weather)
+*** LLM (GPT) = Brain (decides when to use the tool)
+*** Continue = Connector / Controller
+*** Continue = AI agent runtime inside VS Code that enables LLMs to use your MCP tools.
+* [x] OpenAI models
+* [x] MCP (Model Context Protocol) server
+* [x] Python MCP server executed using `uv`
+
+This setup allows an AI model to call external tools (like a weather API) through MCP.
+
+---
+
+*✔️ Architecture Overview*
+
+In this setup:
+
+* The LLM decides when to call a tool.
+* The MCP server executes the tool.
+
+
+##################################################
+
+---
+
+*✔️ Install Required Tools (CLI)*
+
+Install the following tools.
+
+* *Install Continue CLI*: `npm install -g @continuedev/cli``
+
+* *Verify installation:*: `cn --help`
+
+* *Install VC Code Continue Extension* After installing, restart VS Code.
+
+---
+
+*✔️ Continue Configuration Directory (VS Code)*
+
+#Using config.yaml#
+
+ls ~/.continue
+
+----
+~/.continue
+config.ts
+config.yaml
+tsconfig.json
+package.json
+----
+
+##################################################
+
+---
+
+*✔️ MCP Server/GitHub API*
+
+----
+MCP-Henry-Habib/My-Code/API/github-api-private.py
+----
+
+##################################################
+
+---
+
+*MCP Server/Weather API*
+
+The MCP server in this setup is a Python program:`weather.py`. In this case the server is returning hard code value.
+
+It is executed using:
+
+---
+
+`uv run --directory <project-dir> mcp run weather.py`
+
+Example project path: `/Users/nareshchaurasia/nc/Python-TechHub/AI-ML-GenAI/MCP/MCP-Henry-Habib/My-Code/hello-world`
+
+---
+
+*✔️ Continue Configuration for VS Code*
+
+TypeScript configuration file: `/.continue/config.ts`
+
+Example configuration:
+
+[source, typescript]
+----
+export function modifyConfig(config: any): any {
+  return config;
+}
+----
+
+##################################################
+
+---
+
+TypeScript configuration file: `/.continue/config.yaml`
+
+Example configuration:
+
+[source, yaml]
+----
+name: Local Config
+version: 1.0.0
+
+models:
+  - name: GPT-4o-mini
+    provider: openai
+    model: gpt-4o-mini
+    apiKey: "sk-proj-"
+
+mcpServers:
+  - name: weather
+    command: uv
+    args:
+      - run
+      - --directory
+      - /Users/nareshchaurasia/nc/Python-TechHub/AI-ML-GenAI/MCP/MCP-Henry-Habib/My-Code/hello-world
+      - mcp
+      - run
+      - weather.py
+
+  - name: crypto
+    command: uv
+    args:
+      - run
+      - --directory
+      - /Users/nareshchaurasia/nc/Python-TechHub/AI-ML-GenAI/MCP/MCP-Henry-Habib/My-Code/API
+      - mcp
+      - run
+      - crypto.py
+
+  - name: github-private
+    command: uv
+    args:
+      - run
+      - --directory
+      - /Users/nareshchaurasia/nc/Python-TechHub/AI-ML-GenAI/MCP/MCP-Henry-Habib/My-Code/API
+      - mcp
+      - run
+      - "github-api-private.py"
+    env:
+      GITHUB_TOKEN: "ghp_"
+----
+
+##################################################
+
+---
+
+*Environment Variable for API Key*
+
+Instead of hardcoding API keys, use environment variables.
+
+Set the OpenAI key: `export OPENAI_API_KEY="your-api-key"`
+
+Make it permanent:
+
+----
+echo 'export OPENAI_API_KEY="your-api-key"' >> ~/.zshrc
+source ~/.zshrc
+----
+
+##################################################
+
+---
+
+*Restart VS Code*
+
+After updating configuration: Quit VS Code completely. Restart VS Code.
+
+##################################################
+
+=== Test in VS Code
+
+*Test in VS Code*
+
+Open Continue chat using Cmd + L
+
+Example prompt: `Fetch Repositories from GitHub using the github-private MCP server`
+
+##################################################
+
+
+
+=== Test Using Continue CLI
+
+*Test Using Continue CLI*
+
+Run: `cn chat --config ~/.continue/config.yaml`
+
+Then enter prompt:
+
+`Fetch Repositories from GitHub using the github-private MCP server`
+
+The CLI will start the MCP server and call the tool.
+
+---
+
+*Verify MCP Server Logs*
+
+Typical logs look like: These confirm that the MCP protocol is working.
+
+----
+Processing request: ListToolsRequest
+Message from client
+Message from server
+----
+
+##################################################
+
+*Useful Commands*
+
+Check Continue CLI:
+
+----
+# Help
+cn --help
+
+# Start chat
+cn chat
+
+# Run a single prompt
+cn run "Get weather in Tokyo"
+----
+
+##################################################
+
+*Troubleshooting*
+
+*Model not visible in VS Code*
+
+Check:
+
+* `config.ts` exists
+* Continue cloud is disabled
+* VS Code restarted
+
+---
+
+*Cannot find process.env*
+
+```
+cd ~/.continue
+npm install --save-dev @types/node
+```
+
+---
+
+Update `tsconfig.json`:
+
+```
+"types": ["node"]
+```
+
+---
+
+##################################################
+
+*15. MCP server not starting*
+
+Test manually:
+
+---
+
+`uv run --directory <project-dir> mcp run weather.py`
+
+If it works manually, Continue should also run it.
+
+---
+
+
+
+##################################################
+
+== What is `continue`
+
+
+.Continue Plugin
+[%collapsible]
+====
+*Continue* is an AI coding assistant for developers that runs inside editors like Visual Studio Code and in the terminal.
+
+* It connects **LLMs (like GPT, Claude, etc.)** with your **codebase and tools**.
+* It lets you **chat with AI about your code**, generate code, refactor, or debug.
+* It supports **tool calling using MCP (Model Context Protocol)** so AI can execute external tools (APIs, databases, scripts).
+* It works with multiple models (OpenAI, Anthropic, local models, etc.).
+* It also provides a **CLI (`cn`)** to run AI workflows from the terminal.
+
+In simple terms:
+
+*Continue = AI layer that connects your editor + LLM + tools.*
+
+Typical flow:
+
+```
+Editor / Terminal
+      ↓
+Continue
+      ↓
+LLM (GPT / Claude)
+      ↓
+Tools via MCP
+      ↓
+Your code / APIs / databases
+```
+
+So Continue acts like a **bridge between your development environment and AI models**.
+====
+
+
+
+
+
+
