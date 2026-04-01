@@ -4,18 +4,7 @@
 :sectnums: 5
 :sectnumlevels: 5
 
----
-
-NOTE: When you run in dev mode, you get inspector
-
----
-
 == Integration with VS Code
-
-
-#Weather | Crypto | Github#
-
----
 
 * [x] Visual Studio Code
 * [x] Continue Extension
@@ -33,19 +22,12 @@ This setup allows an AI model to call external tools (like a weather API) throug
 
 ---
 
-*✔️ Architecture Overview*
-
-In this setup:
-
-* The LLM decides when to call a tool.
-* The MCP server executes the tool.
-
 
 ##################################################
 
 ---
 
-*✔️ Install Required Tools (CLI)*
+* Install Required Tools (CLI)
 
 Install the following tools.
 
@@ -57,11 +39,13 @@ Install the following tools.
 
 ---
 
-*✔️ Continue Configuration Directory (VS Code)*
+=== Continue Plugin for VS Code
 
-#Using config.yaml#
+NOTE: Using config.yaml
 
-ls ~/.continue
+Install the Continue plugin for VS Code from the marketplace, and verify that ~/.continue directory exists, and that it contains the expected files.
+
+`ls ~/.continue`
 
 ----
 ~/.continue
@@ -75,7 +59,7 @@ package.json
 
 ---
 
-*✔️ MCP Server/GitHub API*
+* MCP Server/GitHub API*
 
 ----
 MCP-Henry-Habib/My-Code/API/github-api-private.py
@@ -99,7 +83,7 @@ Example project path: `/Users/nareshchaurasia/nc/Python-TechHub/AI-ML-GenAI/MCP/
 
 ---
 
-*✔️ Continue Configuration for VS Code*
+* Continue Configuration for VS Code*
 
 TypeScript configuration file: `/.continue/config.ts`
 
