@@ -59,7 +59,7 @@ package.json
 
 ---
 
-* MCP Server/GitHub API*
+=== MCP Server/GitHub API 
 
 ----
 MCP-Henry-Habib/My-Code/API/github-api-private.py
