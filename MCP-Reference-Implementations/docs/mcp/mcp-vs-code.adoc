@@ -67,23 +67,7 @@ MCP-Henry-Habib/My-Code/API/github-api-private.py
 
 ##################################################
 
----
-
-*MCP Server/Weather API*
-
-The MCP server in this setup is a Python program:`weather.py`. In this case the server is returning hard code value.
-
-It is executed using:
-
----
-
-`uv run --directory <project-dir> mcp run weather.py`
-
-Example project path: `/Users/nareshchaurasia/nc/Python-TechHub/AI-ML-GenAI/MCP/MCP-Henry-Habib/My-Code/hello-world`
-
----
-
-* Continue Configuration for VS Code*
+=== Continue Configuration for VS Code
 
 TypeScript configuration file: `/.continue/config.ts`
 
@@ -116,26 +100,6 @@ models:
     apiKey: "sk-proj-"
 
 mcpServers:
-  - name: weather
-    command: uv
-    args:
-      - run
-      - --directory
-      - /Users/nareshchaurasia/nc/Python-TechHub/AI-ML-GenAI/MCP/MCP-Henry-Habib/My-Code/hello-world
-      - mcp
-      - run
-      - weather.py
-
-  - name: crypto
-    command: uv
-    args:
-      - run
-      - --directory
-      - /Users/nareshchaurasia/nc/Python-TechHub/AI-ML-GenAI/MCP/MCP-Henry-Habib/My-Code/API
-      - mcp
-      - run
-      - crypto.py
-
   - name: github-private
     command: uv
     args:
