@@ -113,40 +113,16 @@ mcpServers:
       GITHUB_TOKEN: "ghp_"
 ----
 
-##################################################
-
----
-
-*Environment Variable for API Key*
-
-Instead of hardcoding API keys, use environment variables.
-
-Set the OpenAI key: `export OPENAI_API_KEY="your-api-key"`
-
-Make it permanent:
-
-----
-echo 'export OPENAI_API_KEY="your-api-key"' >> ~/.zshrc
-source ~/.zshrc
-----
-
-##################################################
-
----
-
-*Restart VS Code*
-
-After updating configuration: Quit VS Code completely. Restart VS Code.
 
 ##################################################
 
 === Test in VS Code
 
-*Test in VS Code*
+* *Restart VS Code*: After updating configuration, quit VS Code completely and restart it.
 
-Open Continue chat using Cmd + L
+* *Test in VS Code*: Open Continue chat using `Cmd + L`
 
-Example prompt: `Fetch Repositories from GitHub using the github-private MCP server`
+*Example prompt*: `Fetch Repositories from GitHub using the github-private MCP server`
 
 ##################################################
 
