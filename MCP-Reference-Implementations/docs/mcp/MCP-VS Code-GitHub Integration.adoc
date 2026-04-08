@@ -1,0 +1,192 @@
+= MCP + VS Code + GitHub Integration
+Naresh Chaurasia
+
+== Slide 1 — MCP + VS Code + GitHub Integration
+
+* How AI agents connect to tools using MCP (Model Context Protocol)
+* Presenter: Naresh Chaurasia
+
+== Slide 2 — Agenda
+
+* MCP + VS Code + GitHub Integration
+* MCP: The "USB-C for AI"
+* AI That Talks to Your Tools
+* MCP Architecture
+* How MCP Works
+* Multi-Server Composition
+* Getting Started: Installation and Configuration
+* MCP Capabilities
+* Testing MCP Servers
+
+== Slide 3 — The "USB-C for AI"
+
+* MCP (Model Context Protocol) is a standard protocol for connecting AI agents to enterprise tools, data, and systems
+* Works like USB-C → one interface for everything
+
+* *Before MCP*
+* Custom integrations required for every tool
+* Fragile and expensive
+
+* *With MCP*
+* Universal interface for all tools (GitHub, DB, APIs, filesystem)
+* No custom glue code
+
+* *Enterprise Benefit*
+* Plug new AI models or tools without rebuilding integrations
+
+* MCP eliminates integration sprawl and simplifies architecture
+
+== Slide 4 — AI That Talks to Your Tools
+
+* MCP enables AI to interact with external tools
+
+* *Capabilities*
+* Read repositories → understand structure
+* Create issues & PRs → automate workflows
+* Analyze code → architecture insights
+* Automate workflows → multi-step execution
+
+== Slide 5 — MCP Architecture
+
+* *Flow*
+* Host Application → IDE / Chat App
+* MCP Client → inside host
+* Protocol Layer → JSON-RPC communication
+* MCP Server → exposes tools
+* External Systems → GitHub, DB, APIs
+
+* *Definitions*
+* Host → where AI runs (VS Code, Cursor)
+* Client → sends/receives requests
+* Protocol → standard communication layer
+* Server → exposes capabilities
+
+== Slide 6 — How MCP Works
+
+* AI extension acts as MCP Client
+* Connects to multiple MCP Servers
+
+* *Flow*
+* VS Code
+* AI Extension (Continue / Cursor / Claude)
+* MCP Client
+* MCP Server (GitHub / Filesystem / DB)
+
+* *Key Idea*
+* Swap tools or models without changing workflow
+
+== Slide 7 — Multi-Server Composition
+
+* One MCP Client connects to multiple servers
+
+* *Flow*
+* AI Agent → orchestrates
+* MCP Client → routes requests
+* Filesystem Server → files
+* Database Server → data
+* GitHub Server → repos
+* Custom Server → enterprise APIs
+
+== Slide 8 — Multi-Server Concepts
+
+* Compose multiple servers easily
+* Chain tools across systems
+* Enable enterprise workflows
+
+* *Example Workflow*
+* Read files → Filesystem
+* Fetch data → Database
+* Analyze repo → GitHub
+* Call API → Custom server
+* Generate insights
+
+== Slide 9 — Step 1: Install MCP Extension
+
+* Install AI extension in VS Code
+
+* *Options*
+* Claude Desktop + VS Code
+* Continue.dev (recommended)
+* Cursor IDE
+
+* *Recommendation*
+* Continue.dev → simple, open-source, easy setup
+
+== Slide 10 — Step 2: Install GitHub MCP Server
+
+* Run using npx
+
+[source,bash]
+----
+npx -y @modelcontextprotocol/server-github
+----
+
+* *Capabilities*
+* Read repositories
+* Search code
+* Create issues
+* Manage pull requests
+
+== Slide 11 — Step 3: Configure MCP
+
+[source,json]
+----
+{
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_TOKEN": "your_token_here"
+      }
+    }
+  }
+}
+----
+
+* *Key Fields*
+* command → runtime
+* args → package
+* env → secrets
+* mcpServers → multiple servers config
+
+== Slide 12 — Step 4: GitHub Token
+
+* Go to GitHub Settings → Developer Settings
+* Create Personal Access Token (PAT)
+
+* *Permissions*
+* repo
+* read:org
+* workflow
+
+* Add token to MCP config and restart extension
+
+== Slide 13 — What You Can Ask
+
+* "List all files in repo"
+* "Find Spring Boot controllers"
+* "Create issue: Bug in login API"
+* "Explain repository architecture"
+
+== Slide 14 — Testing MCP (Inspector)
+
+* Use MCP Inspector
+
+* *Capabilities*
+* Inspect tools/resources
+* Send live requests
+* Debug issues
+
+* *Flow*
+* Developer → Inspector → MCP Server
+
+== Slide 15 — Testing MCP (Automation)
+
+* Write integration tests
+
+* *Validate*
+* Correct responses
+* Data integrity
+* Error handling
+* End-to-end workflows
