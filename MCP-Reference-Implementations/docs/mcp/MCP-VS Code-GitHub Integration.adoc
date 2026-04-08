@@ -1,6 +1,8 @@
 = MCP + VS Code + GitHub Integration
 Naresh Chaurasia
 
+https://cognizantonline.sharepoint.com/:p:/r/sites/NACampusHireCognizant/_layouts/15/Doc.aspx?sourcedoc=%7B84D07916-B24C-457A-ABF1-85855AB24627%7D&file=MCP-Model-Context-Protocol-v1.0.pptx&action=edit&mobileredirect=true[MCP Model Context Protocol]
+
 == Slide 1 — MCP + VS Code + GitHub Integration
 
 * How AI agents connect to tools using MCP (Model Context Protocol)
