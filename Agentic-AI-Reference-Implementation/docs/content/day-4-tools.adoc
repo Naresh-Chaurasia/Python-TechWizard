@@ -1,0 +1,8 @@
+== Day 4 – Tool Usage in Agents
+
+*Concept*
+* Why agents need tools
+* Tool invocation patterns
+
+*Exercise*
+* List 5 tools an AI agent can use
