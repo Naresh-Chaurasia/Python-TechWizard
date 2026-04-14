@@ -1,4 +1,0 @@
-= Examples
-
-Welcome to the examples section.
-This folder contains practical examples of Agentic AI implementations.
