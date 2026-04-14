@@ -1,0 +1,10 @@
+== Day 2 – Agent Mental Model
+
+*Concept*
+* Goal → Plan → Action → Observation → Loop
+
+*Exercise*
+* Draw agent loop diagram
+
+*Reflection*
+* Why is looping critical?

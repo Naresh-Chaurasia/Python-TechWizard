@@ -1,0 +1,102 @@
+= ✔️ Agentic AI – 21 Day Self-Paced Program
+:toc: right
+
+
+== Program Outcome
+
+By the end of this program, you will be able to:
+
+* Understand the difference between traditional AI and Agentic AI
+* Build AI agents that plan, reason, and act
+* Integrate tools, memory, and decision-making
+* Design multi-agent systems
+* Handle real-world challenges like hallucination, failure, and scaling
+* Build a production-ready agentic system
+
+---
+
+include::./content/day-1-what-agentic-ai-c.adoc[]
+
+---
+
+include::./content/day-2.adoc[]
+
+---
+
+include::./content/day-3.adoc[]
+
+---
+
+include::./content/day-4.adoc[]
+
+---
+
+include::./content/day-5.adoc[]
+
+---
+
+include::./content/day-6.adoc[]
+
+---
+
+include::./content/day-7.adoc[]
+
+---
+
+include::./content/day-8.adoc[]
+
+---
+
+include::./content/day-9.adoc[]
+
+---
+
+include::./content/day-10.adoc[]
+
+---
+
+include::./content/day-11.adoc[]
+
+---
+
+include::./content/day-12.adoc[]
+
+---
+
+include::./content/day-13.adoc[]
+
+---
+
+include::./content/day-14.adoc[]
+
+---
+
+include::./content/day-15.adoc[]
+
+---
+
+include::./content/day-16.adoc[]
+
+---
+
+include::./content/day-17.adoc[]
+
+---
+
+include::./content/day-18.adoc[]
+
+---
+
+include::./content/day-19.adoc[]
+
+---
+
+include::./content/day-20.adoc[]
+
+---
+
+include::./content/day-21-frameworks-c.adoc[]
+
+---
+
+include::./content/day-22-patterns-c.adoc[]
