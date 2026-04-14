@@ -1,17 +1,6 @@
 = ✔️ Agentic AI – 21 Day Self-Paced Program
 :toc: right
 
-[NOTE]
-====
-**GitHub Viewing Notice**: This document uses AsciiDoc includes which are not rendered on GitHub. 
-
-**To view the full content:**
-1. Clone this repository locally
-2. Use an AsciiDoc processor (like `asciidoctor`) to render the document
-3. Or view the individual day files in the `content/` folder
-====
-
-
 == Program Outcome
 
 By the end of this program, you will be able to:
@@ -27,32 +16,26 @@ By the end of this program, you will be able to:
 
 == 📚 Course Content (Click on individual days for GitHub viewing)
 
-* **Day 1**: link:./content/day-1-what-agentic-ai-c.adoc[What is Agentic AI?]
-* **Day 2**: link:./content/day-2.adoc[Agent Fundamentals]  
-* **Day 3**: link:./content/day-3.adoc[Planning and Reasoning]
-* **Day 4**: link:./content/day-4.adoc[Tool Integration]
-* **Day 5**: link:./content/day-5.adoc[First Simple Agent]
-* **Day 6**: link:./content/day-6.adoc[Multi-Step Reasoning]
-* **Day 7**: link:./content/day-7.adoc[Memory Systems]
-* **Day 8**: link:./content/day-8.adoc[Error Handling]
-* **Day 9**: link:./content/day-9.adoc[Agent Testing]
-* **Day 10**: link:./content/day-10.adoc[Advanced Reasoning]
-* **Day 11**: link:./content/day-11.adoc[Multi-Agent Coordination]
-* **Day 12**: link:./content/day-12.adoc[Agent Communication]
-* **Day 13**: link:./content/day-13.adoc[Multi-Agent Systems]
-* **Day 14**: link:./content/day-14.adoc[Agent Orchestration]
-* **Day 15**: link:./content/day-15.adoc[Production Deployment]
-* **Day 16**: link:./content/day-16.adoc[Monitoring & Debugging]
-* **Day 17**: link:./content/day-17.adoc[Security Considerations]
-* **Day 18**: link:./content/day-18.adoc[Performance Optimization]
-* **Day 19**: link:./content/day-19.adoc[Real-world Integration]
-* **Day 20**: link:./content/day-20.adoc[Scaling Strategies]
-* **Day 21**: link:./content/day-21-frameworks-c.adoc[Framework Comparison]
-* **Day 22**: link:./content/day-22-patterns-c.adoc[Design Patterns]
-
----
-
-== Day 1 Content Preview
-
-include::./content/day-1-what-agentic-ai-c.adoc[]
+* *Day 1*: link:./content/day-1-what-agentic-ai-c.adoc[What is Agentic AI?]
+* *Day 2*: link:./content/day-2.adoc[Agent Fundamentals]  
+* *Day 3*: link:./content/day-3.adoc[Planning and Reasoning]
+* *Day 4*: link:./content/day-4.adoc[Tool Integration]
+* *Day 5*: link:./content/day-5.adoc[First Simple Agent]
+* *Day 6*: link:./content/day-6.adoc[Multi-Step Reasoning]
+* *Day 7*: link:./content/day-7.adoc[Memory Systems]
+* *Day 8*: link:./content/day-8.adoc[Error Handling]
+* *Day 9*: link:./content/day-9.adoc[Agent Testing]
+* *Day 10*: link:./content/day-10.adoc[Advanced Reasoning]
+* *Day 11*: link:./content/day-11.adoc[Multi-Agent Coordination]
+* *Day 12*: link:./content/day-12.adoc[Agent Communication]
+* *Day 13*: link:./content/day-13.adoc[Multi-Agent Systems]
+* *Day 14*: link:./content/day-14.adoc[Agent Orchestration]
+* *Day 15*: link:./content/day-15.adoc[Production Deployment]
+* *Day 16*: link:./content/day-16.adoc[Monitoring & Debugging]
+* *Day 17*: link:./content/day-17.adoc[Security Considerations]
+* *Day 18*: link:./content/day-18.adoc[Performance Optimization]
+* *Day 19*: link:./content/day-19.adoc[Real-world Integration]
+* *Day 20*: link:./content/day-20.adoc[Scaling Strategies]
+* *Day 21*: link:./content/day-21-frameworks-c.adoc[Framework Comparison]
+* *Day 22*: link:./content/day-22-patterns-c.adoc[Design Patterns]
 
