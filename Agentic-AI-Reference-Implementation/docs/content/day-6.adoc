@@ -9,4 +9,4 @@
 * *Exercise*
 ** Solve a multi-step task using agent logic
 
-include::../agetic-ai-aman/chain-of-thoughts.adoc[]
+// TODO: Add chain-of-thoughts example content

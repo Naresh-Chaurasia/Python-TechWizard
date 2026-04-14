@@ -5,4 +5,4 @@
 
 === Usecase1 (Aman): Project Team / Chef and Nutritionist
 
-include::../agetic-ai-aman/project-team-chef-nutritionist.adoc[]
+// TODO: Add project team chef-nutritionist example content

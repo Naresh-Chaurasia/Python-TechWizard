@@ -1,6 +1,12 @@
 = ✔️ Agentic AI – 21 Day Self-Paced Program
 :toc: right
 
+[NOTE]
+====
+GitHub Viewing Notice: This document uses AsciiDoc includes which are not rendered on GitHub. 
+For the full experience, view locally with an AsciiDoc processor or check the `agentic-ai-self-learning-github.adoc` file for a GitHub-friendly version.
+====
+
 
 == Program Outcome
 
@@ -17,86 +23,3 @@ By the end of this program, you will be able to:
 
 include::./content/day-1-what-agentic-ai-c.adoc[]
 
----
-
-include::./content/day-2.adoc[]
-
----
-
-include::./content/day-3.adoc[]
-
----
-
-include::./content/day-4.adoc[]
-
----
-
-include::./content/day-5.adoc[]
-
----
-
-include::./content/day-6.adoc[]
-
----
-
-include::./content/day-7.adoc[]
-
----
-
-include::./content/day-8.adoc[]
-
----
-
-include::./content/day-9.adoc[]
-
----
-
-include::./content/day-10.adoc[]
-
----
-
-include::./content/day-11.adoc[]
-
----
-
-include::./content/day-12.adoc[]
-
----
-
-include::./content/day-13.adoc[]
-
----
-
-include::./content/day-14.adoc[]
-
----
-
-include::./content/day-15.adoc[]
-
----
-
-include::./content/day-16.adoc[]
-
----
-
-include::./content/day-17.adoc[]
-
----
-
-include::./content/day-18.adoc[]
-
----
-
-include::./content/day-19.adoc[]
-
----
-
-include::./content/day-20.adoc[]
-
----
-
-include::./content/day-21-frameworks-c.adoc[]
-
----
-
-include::./content/day-22-patterns-c.adoc[]
