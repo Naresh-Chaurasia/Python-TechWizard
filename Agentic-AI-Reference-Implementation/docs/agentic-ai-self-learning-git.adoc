@@ -5,6 +5,8 @@
 == 📚 Course Content
 
 * *Day 1*: link:./content/day-1-what-agentic-ai-c.adoc[Day 1 - What is Agentic AI?]
+* *Day 1*: link:./content/day-1-case-study-invest-100.adoc[Day 1 - Case Study: Investing $100]
+* *Day 1*: link:./content/day-1-case-study-agentic-vs-tradational.adoc[Day 1 - Case Study: Agentic vs Traditional AI]
 * *Day 2*: link:./content/day-2-frameworks-c.adoc[Day 2 - Frameworks]
 * *Day 3*: link:./content/day-3-patterns-c.adoc[Day 3 - Patterns]
 * *Day 4*: link:./content/day-4-tools.adoc[Day 4 - Tool Usage in Agents]
