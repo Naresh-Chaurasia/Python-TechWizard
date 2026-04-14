@@ -1,7 +1,0 @@
-== Day 11 – Multi-Tool Agents
-
-*Concept*
-* Tool selection logic
-
-*Exercise*
-* Build agent with 2–3 tools

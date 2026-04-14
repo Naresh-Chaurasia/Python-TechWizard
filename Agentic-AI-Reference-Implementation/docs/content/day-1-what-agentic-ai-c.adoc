@@ -1,32 +1,20 @@
-== ✔️ Day 1 – What is Agentic AI?
+= Day 1 – What is Agentic AI?
+:toc: right
 
-*Concept*
 
-* [ ] Traditional AI vs Agentic AI
-* [ ] AI that responds vs AI that acts
+Agentic AI consists of autonomous systems that proactively solve problems by reasoning, making decisions, and using tools to achieve goals
 
-*Exercise*
+== Learning Objectives
 
-* [ ] Write 3 differences between chatbot and agent
-
-*Reflection*
-
-* [ ] Where do you see agents replacing workflows?
-
----
-
-* Agentic AI consists of autonomous systems that proactively solve problems by reasoning, making decisions, and using tools to achieve goals
-
-* *Learning Objectives*
 ** Understand what defines an AI agent
 ** Explain how agentic AI differs from traditional systems
 ** Identify key capabilities of AI agents
 ** Understand multi-agent systems and their benefits
 ** Recognize when and why frameworks are used
 
-* *Agentic AI*
+== What is Agentic AI
 
-* AI Agents
+
 ** Autonomous systems
 ** Make decisions and take actions independently
 ** Goal-oriented behavior
@@ -94,7 +82,8 @@
 
 ---
 
-* *Quick Revision Points*
+*Quick Revision Points*
+
 ** AI agents are autonomous and goal-oriented
 ** They perform reasoning, decision-making, and tool usage
 ** Agentic AI is proactive, unlike reactive systems

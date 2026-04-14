@@ -1,4 +1,0 @@
-== Day 18 – Capstone Project (Build)
-
-*Exercise*
-* Implement your system

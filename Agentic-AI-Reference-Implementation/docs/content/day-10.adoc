@@ -1,8 +1,0 @@
-== Day 10 – Handling Failures
-
-*Concept*
-* Tool failure
-* Wrong reasoning
-
-*Exercise*
-* Introduce failure and recover
