@@ -1,0 +1,15 @@
+= Agentic AI Reference Implementation
+
+This repository contains reference implementations, examples, and documentation for various Agentic AI frameworks and systems.
+
+== Structure
+
+* docs/ - Documentation and guides
+* examples/ - Example implementations
+* implementations/ - Framework-specific implementations
+* templates/ - Code templates and patterns
+* tools/ - Development tools and utilities
+
+== Purpose
+
+To provide comprehensive reference materials for building and understanding Agentic AI systems across different frameworks and platforms.
