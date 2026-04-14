@@ -17,7 +17,7 @@ By the end of this program, you will be able to:
 
 == 📚 Course Content
 
-* *Day 1*: link:./content/day-1-what-agentic-ai-c.html[Day 1 - What is Agentic AI?]
+* *Day 1*: link:./content/day-1-what-agentic-ai-c.adoc[Day 1 - What is Agentic AI?]
 
 ---
 
